@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@layer components {
+  .card figure img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .card:hover figure img {
+    @apply -translate-y-1 scale-125
+  }
+}
